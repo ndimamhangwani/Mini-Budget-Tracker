@@ -60,3 +60,33 @@ function addExpense() {
   amountInput.value = '';
   descInput.value = '';
 }
+
+//? Bonus:  The functionality for category
+
+function addIncome() {
+  const amount = Number(amountInput.value);
+  const desc = descInput.value;
+  const category = document.getElementById('categoryInput').value; // get category
+
+  const result = BudgetTracker.addIncome(amount, desc, category);
+
+  console.log(result);
+  updateUI();
+
+  amountInput.value = '';
+  descInput.value = '';
+}
+
+function addExpense() {
+  const amount = Number(amountInput.value);
+  const desc = descInput.value;
+  const category = document.getElementById('categoryInput').value; // get category
+
+  const result = BudgetTracker.addExpense(amount, desc, category);
+
+  console.log(result);
+  updateUI();
+
+  amountInput.value = '';
+  descInput.value = '';
+}
