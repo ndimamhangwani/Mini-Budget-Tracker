@@ -1,0 +1,94 @@
+
+    /* Basic body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f9;
+      display: flex;
+      justify-content: center;
+      padding: 50px 0;
+    }
+
+    /* Container for the tracker */
+    .container {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    /* Labels and inputs */
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    /* Buttons */
+    button {
+      padding: 12px 20px;
+      margin: 15px 5px 0 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      color: white;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .income-btn {
+      background-color: #4caf50; /* Green */
+    }
+
+    .expense-btn {
+      background-color: #f44336; /* Red */
+    }
+
+    /* Summary section */
+    .summary {
+      margin-top: 25px;
+      padding: 15px;
+      background: #f1f5f9;
+      border-radius: 8px;
+    }
+
+    .summary h3 {
+      margin: 8px 0;
+      color: #333;
+    }
+
+    /* Transaction list */
+    ul {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    li {
+      padding: 8px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    li:nth-child(odd) {
+      background: #f9f9f9;
+    }
