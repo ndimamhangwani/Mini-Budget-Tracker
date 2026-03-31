@@ -31,7 +31,6 @@ and see a running balance. Designed with modular JavaScript and clean code princ
 ## Built at
 TechBridle Foundation, Software Development Cohort 2026
 
-Module 2, Lesson 3: Async JavaScript
 
 Built by: Ndima Mhangwani
 
