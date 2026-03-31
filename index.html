@@ -2,12 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Budget Tracker Test</title>
+  <title>Mini Budget Tracker</title>
+<link rel="stylesheet" href="Style.css">
 </head>
 <body>
- 
 
-  <!-- Linking JavaScript file -->
+  <div class="container">
+    <h1>Mini Budget Tracker</h1>
+
+    <!-- Input fields -->
+    <label for="amountInput">Amount:</label>
+    <input type="number" id="amountInput" placeholder="Enter amount">
+
+    <label for="descriptionInput">Description:</label>
+    <input type="text" id="descriptionInput" placeholder="Enter description">
+
+    <!-- Buttons -->
+    <button class="income-btn" onclick="addIncome()">Add Income</button>
+    <button class="expense-btn" onclick="addExpense()">Add Expense</button>
+
+    <!-- Summary -->
+    <div class="summary">
+      <h3 id="income">Income: R0</h3>
+      <h3 id="expenses">Expenses: R0</h3>
+      <h3 id="balance">Balance: R0</h3>
+    </div>
+
+    <!-- Transaction list -->
+    <ul id="transactions"></ul>
+  </div>
+
+  <!-- Scripts -->
   <script src="budgetTracker.js"></script>
+  <script src="test.js"></script>
 </body>
 </html>
