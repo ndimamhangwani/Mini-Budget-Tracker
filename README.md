@@ -28,10 +28,12 @@ and see a running balance. Designed with modular JavaScript and clean code princ
 - Enhanced styling and responsive design
 - Add edit and delete feature
 
-## Author
+## Built at
+TechBridle Foundation, Software Development Cohort 2026
 
-Mhangwani Ndima Karabo (Techbridle Foundation Learner) 
--
+Module 2, Lesson 3: Async JavaScript
+
+Built by: Ndima Mhangwani
 
 ## Screenshot of how it looks so far
 
