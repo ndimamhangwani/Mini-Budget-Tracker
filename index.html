@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Mini Budget Tracker</title>
-<link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <title>Mini Budget Tracker</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>Mini Budget Tracker</h1>
+    <div class="container">
+        <h1>Mini Budget Tracker</h1>
 
-    <!-- Input fields -->
-    <label for="amountInput">Amount:</label>
-    <input type="number" id="amountInput" placeholder="Enter amount">
+        <!-- Input fields -->
+        <label for="amountInput">Amount:</label>
+        <input type="number" id="amountInput" placeholder="Enter amount">
 
-    <label for="descriptionInput">Description:</label>
-    <input type="text" id="descriptionInput" placeholder="Enter description">
+        <label for="descriptionInput">Description:</label>
+        <input type="text" id="descriptionInput" placeholder="Enter description">
 
-    <!-- Buttons -->
-    <button class="income-btn" onclick="addIncome()">Add Income</button>
-    <button class="expense-btn" onclick="addExpense()">Add Expense</button>
 
-    <!-- Summary -->
-    <div class="summary">
-      <h3 id="income">Income: R0</h3>
-      <h3 id="expenses">Expenses: R0</h3>
-      <h3 id="balance">Balance: R0</h3>
+        <!-- Category optiob -->
+
+        <label for="categoryInput">Category:</label>
+        <select id="categoryInput">
+            <option value="uncategorized">Uncategorized</option>
+            <option value="salary">Salary</option>
+            <option value="freelance">Freelance</option>
+            <option value="food">Food</option>
+            <option value="transport">Transport</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="other">Other</option>
+        </select>
+        <!-- Buttons -->
+        <button class="income-btn" onclick="addIncome()">Add Income</button>
+        <button class="expense-btn" onclick="addExpense()">Add Expense</button>
+
+        <!-- Summary -->
+        <div class="summary">
+            <h3 id="income">Income: R0</h3>
+            <h3 id="expenses">Expenses: R0</h3>
+            <h3 id="balance">Balance: R0</h3>
+        </div>
+
+        <!-- Transaction list -->
+        <ul id="transactions"></ul>
     </div>
 
-    <!-- Transaction list -->
-    <ul id="transactions"></ul>
-  </div>
-
-  <!-- Scripts -->
-  <script src="budgetTracker.js"></script>
-  <script src="test.js"></script>
+    <!-- Scripts -->
+    <script src="budgetTracker.js"></script>
+    <script src="test.js"></script>
+    <script type="module" src="lesson4.js"></script>
 </body>
+
 </html>
